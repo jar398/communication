@@ -2,19 +2,27 @@ WORK IN PROGRESS - SUBJECT TO REVISION WITHOUT NOTICE
 
 # Communication
 
-You'll get the best results in the following if you consider the case where the agents are both robots (designed computers with sensors and actuators). For additional challenge consider animals (e.g. vervet monkeys). But the presentation is meant to apply, perhaps with more explanatory machinery, when the agents are humans.
+You'll get the best results in the following if you consider the case where the agents are both robots (designed computers with sensors and actuators). For additional challenge (and flaws), consider in sequence
+
+* programmers communicating with robots (programming and debugging)
+* animal signalling (e.g. vervet monkeys)
+* people communicating with people, in specific roles (doctor, building contractor, ...)
+* people communicating with people
 
 ## Communication system
 
 A communication system consists of agents connected by channels.  The state of a channel is called a sentence (or message), i.e. a channel carries different sentences at different times.  The state of a channel is controlled by one or more agents, and sensed by one or more agents.
 
-When an agent causes a particular sentence to become the state of a channel, it is "generating" the sentence.  When an agent senses the state of a channel and acts contingently on that sentence, it is "interpreting" the sentence.  Agent A generating S on C, followed by agent B interpreting S on C, is a "communication event".
+When an agent causes a particular sentence to become the state of a channel, it is "generating" the sentence.  When an agent senses the state of a channel and acts (even if only to change its own internal state), it is "interpreting" the sentence.  Agent A generating S on C, followed by agent B interpreting S on C, is a "communication event".
 
-Every channel has a quiescent state, i.e. one in which no generation is happening.
+For a system to be a communication systemm, there must be at least one sentence (state) that is both generated and interpreted.
+
+(?) Every channel must have a quiescent state, i.e. one in which no generation or interpretation is happening.
 
 * I don't say that 'communication system' is an ontological category. It could be more of a role or an analytical structure, i.e. we look at the world and call out a few entities as being a 'communication system' in order to help begin and structure a discussion about them.  In any case, if we don't have agents controlling and sensing a channel, we don't have a communication system.
 * I'm not prepared to define 'communication' and I'm not sure I need to.
 * By 'generate' and 'interpret' I mean to imply the agents' _involvement_ in selecting the sentence and choosing how to respond - not just in proximally relaying or transducing the channel state.  A microphone, or video player, or mail carrier, is not generating or interpreting.
+* A 'sentence' could be a simple state such as a light being illuminated, or a complex state such as a paragraph.
 
 ## Meaning
 
