@@ -2,6 +2,8 @@ WORK IN PROGRESS - SUBJECT TO REVISION WITHOUT NOTICE
 
 # Communication
 
+You'll get the best results in the following if you consider the case where the agents are both robots (designed computers with sensors and actuators). For additional challenge consider animals (e.g. vervet monkeys). But the presentation is meant to apply, perhaps with more explanatory machinery, when the agents are humans.
+
 ## Communication system
 
 A communication system consists of agents connected by channels.  The state of a channel is called a sentence (or message), i.e. a channel carries different sentences at different times.  The state of a channel is controlled by one or more agents, and sensed by one or more agents.
@@ -12,19 +14,21 @@ Every channel has a quiescent state, i.e. one in which no generation is happenin
 
 * I don't say that 'communication system' is an ontological category. It could be more of a role or an analytical structure, i.e. we look at the world and call out a few entities as being a 'communication system' in order to help begin and structure a discussion about them.  In any case, if we don't have agents controlling and sensing a channel, we don't have a communication system.
 * I'm not prepared to define 'communication' and I'm not sure I need to.
-* By 'generate' and 'interpret' I mean to imply the agents' _involvement_ in selecting the sentence and choosing how to respond - not just in proximally relaying or transducing the channel state.  A speaker or microphone, or mail carrier, is not generating or interpreting.
+* By 'generate' and 'interpret' I mean to imply the agents' _involvement_ in selecting the sentence and choosing how to respond - not just in proximally relaying or transducing the channel state.  A microphone, or video player, or mail carrier, is not generating or interpreting.
 
 ## Meaning
 
 A sentence S (on a given channel) means the proposition P, where P = P1 AND LATER(P2); P1, generally speaking, is what holds when an agent generates S; and P2 is what holds after an agent interprets S, generally speaking.
 
+The system of meanings associated with the sentences on a channel might be called an 'encoding'.
+
+* See following for 'proposition'.
 * LATER is a modal operator similar to the deontic OB: LATER(P2) iff an interpreting agent will bring about P2.
 * "Generally speaking" means we are talking about what is common to many communication events on a channel in a system, not any particular communication event.  We can't talk about this kind of "meaning" except as a generalization about the behavior over time of a communication system.
 * We could talk about "generally" as implying that the meaning of a sentence is a statistical property of a system, although I'd rather not (I note that people usually do not do so, in ordinary conversation).
 * This use of "meaning" coincides with one common use, but the word gets used in many other ways (including within this page!).  That might argue for qualifying it somehow, or using a different word.
-* If P2 is empty - that is, nothing generally seems to hold when S is interpreted - we say that S is 'declarative'.
-* If P1 is empty - that is, nothing generally seems to hold when S is generated - we say that S is 'imperative'.
-* See following for 'proposition'.
+* If P2 seems to be empty - that is, nothing generally holds when S is interpreted - we say that S is 'declarative'.  (I say 'seems' because it's useful to say S is declarative even if there is an undetectable regularity; the point is that the interpreting agent appears to have free choice, regardless of what you think of the free will debate.)
+* If P1 seems to be empty - that is, nothing generally holds when S is generated - we say that S is 'imperative'.  (The interpreting agent has free choice in what it 'commands'.)
 
 ## Proposition
 
@@ -34,7 +38,7 @@ Something that can be true or false; a potential object of a propositional attit
 
 ## Truth and fidelity
 
-Individual agent actions can have a 'payoff' for that agent. If the payoffs are +/+ (positive for the generator, positive for the interpreter), the agents are acting cooperatively: the generator is 'telling the truth' and the interpreter is acting with 'fidelity'.
+Individual agent actions can have a 'payoff' for that agent. In a communication event, if the payoffs are +/+ (positive for the generator, positive for the interpreter), the agents are acting cooperatively: the generator is 'telling the truth' and the interpreter is acting with 'fidelity'.
 
 (Assume that neither agent can get a nonzero payoff unless both generation and interpretation are taking place.)
 
@@ -45,18 +49,29 @@ One expects an agent to modulate its actions to maximize payoffs, integrated ove
 * What is a payoff?  In a biological setting, it might be an increment to fitness; in a commercial setting, it might be an exchange of money.  Over the long run, payoffs determine the phenotype and fitness of organisms, or design and production of goods.
 * The payoff to the generator is going to be indirect through a causal chain, not involving the channel, beginning with whatever change the interpreter brought about to its environment and ending with some local state that the generator senses and 'likes' or not (payoff); similarly the payoff to the interpreter will involve a causal chain, not involving the channel, from whatever the generator sensed in its environment to some local state the interpreter 'likes' or not.
 * Mistakes can look like lies or betrayals. That's what apologies are for. But as mistakes are 'unintentional', one would expect a lower payoff for a mistake than for a lie or betrayal.
+* Simultaneous mistakes might cancel out and have the appearance of truth and fidelity; they are mistakes because they are not customary (if paired with the customary action in that situation, each mistake would fail to yield +/+ payoffs).
 
-## Compositional semantics
+## Community
+
+The above makes sense even if the world only has two agents in it.  However, a common scenario is that of a population of agents continually forming and breaking communication links, and switching roles between generator and interpreter.  In this case the world that an agent senses can include many channels (other agents), as well as other elements, and an agent's actions (including interpretations) can affect many channels, as well as other elements of the world.
+
+An economy results if the channels are similar to one another, and sentences relate to meanings in a systematic (not necessarily fixed) way.  Then an agent can transfer what it 'knows' about communication on one channel to communication on another.
+
+
+# Compositional semantics
 
 A sentence can have parts, in the sense that there are patterns to how the parts are used - the parts have "meaning".  Parts can themselves have parts, down to atomic units that one might call "words". Determining the part-whole structure of a sentence is called 'parsing'.
 
-"Compitional semantics" refers to the ability of agents to use part-meanings (whatever those may be) to generate and interpret sentences with which they have no previous experience.
+"Compositional semantics" refers to the ability of agents to use part-meanings (whatever those may be) to generate and interpret sentences with which they have no previous experience.
+
+
+## Reference
 
 Empirically speaking, in both natural and artificial languages, an important observed pattern is elementary sentences consisting of two parts, a noun phrase and a verb phrase.
 
 The (truth of the) meaning of a sentence reflects the agents' world.  If we "knew" the "language" of the agents, we might say informally that the noun phrase in an elementary sentence has something to do with some part of that world.  We might call this "has something to do with" relationship "reference" without knowing exactly why we do so. But is there an objective way to assess whether or not a given noun phrase refers to a given part of the agents' world, so that we can make judgments of reference without having to "know" the "language"?
 
-## Reference
+A possible answer to this question is the following claim (or definition):
 
 A noun phrase N refers to object O if every sentence whose subject is N means a proposition that is about O.
 
@@ -71,5 +86,5 @@ A proposition P is about an object O if its truth is sensitive to the state of O
 
 * This definition relies on the ability to delimit the state of a given object.  Internal state such as hunger or temperature is pretty clearly state, but relations such as what one's wearing, position (with respect to the world), and ownership (is what I own part of my state, and am I part of its state?) are less clear.
 * 'Change' and 'state' are clearly closely related, perhaps even interdefinable.
-* Sometimes, as in IAO or Brian Smith's work, the term 'is about' relates sentences or sentence parts to objects, not propositions to objects.  My use is closer to Yablo's.
+* Sometimes, as in IAO or Brian Smith's work, the term 'is about' relates sentences or sentence parts to objects, not propositions to objects.  My usage is closer to Yablo's.
 
