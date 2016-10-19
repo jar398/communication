@@ -1,5 +1,18 @@
 # communication
 
+## Proposition
+
+Something that can be true or false; a potential object of a propositional attitude.
+
+* Just as a color-quality or color-variable (e.g. the color of the wall) can change over time but is a particular color at any given time, a proposition can vary over time but has a particular truth value (true or false) at any given time.
+
+## About
+
+A proposition P is about an object O if its truth is sensitive to the state of O.  That is, P is about O if there is (hypothetically) some change that could be made to O that would invert the truth of P.
+
+* This definition relies on the ability to delimit the state of a given object.  Internal state such as hunger or temperature is pretty clearly state, but relations such as what one's wearing, position (with respect to the world), and ownership (is what I own part of my state, and am I part of its state?) are less clear.
+* 'Change' and 'state' are clearly closely related, perhaps even interdefinable.
+
 ## Communication system
 
 A communication system consists of agents connected by channels.  The state of a channel is called a sentence (or message), i.e. a channel carries different sentences at different times.  The state of a channel is controlled by one or more agents, and sensed by one or more agents.
@@ -8,40 +21,35 @@ When an agent causes a particular sentence to become the state of a channel, it 
 
 * I don't claim that 'communication system' is an ontological category. It could be more of a role or an analytical structure, i.e. we look at the world and call out a few entities as being a 'communication system' in order to begin a discussion about them.  In any case, if we don't have agents controlling and sensing a channel, we don't have a communication system.
 
+## Meaning
+
+A sentence S (on a given channel) means the proposition P, where P = P1 AND LATER(P2), P1, generally speaking, is what holds when an agent generates S (places it on the channel), and P2 is what holds after an agent interpreting S does whatever it does, generally speaking.
+
+* LATER is a modal operator similar to the deontic OB: LATER(P2) iff an interpreting agent will bring P2 about.
+* "Generally speaking" means we are talking about what is common to many communication events on a channel in a system, not any particular communication event.  We can't talk about this kind of "meaning" except as a generalization about the behavior over time of a communication system.
+* We could talk about "generally" as implying that the meaning of a sentence is a statistical property of a system, although I'd rather not (I note that people usually do not do so, in ordinary conversation).
+* This use of "meaning" coincides with one common use, but the word gets used in many other ways (including within this page!).  That might argue for qualifying it somehow, or using a different word.
+* If P2 is empty - that is, nothing generally seems to hold when S interpreted - we say that S is 'declarative'.
+* If P1 is empty - that is, nothing generally seems to hold when S is generated - we say that S is 'imperative'.
+
+## Compositional semantics
+
+A sentence can have parts, in the sense that there are patterns to how the parts are used - the parts have "meaning".  Parts can themselves have parts, down to atomic units that one might call "words". Determining the part-whole structure of a sentence is called 'parsing'.
+
+"Compitional semantics" refers to the ability of agents to use part-meanings to generate and interpret sentences with which they have no previous experience.
+
+Empirically speaking, in both natural and artificial languages, an important pattern is elementary sentences consisting of two parts, a noun phrase and a verb phrase.
+
 ## Reference
 
-Noun phrase N refers to object O if every sentence whose subject is N means a proposition that is about O.
+A noun phrase N refers to object O if every sentence whose subject is N means a proposition that is about O.
 
 Disclaimers
 
 * This claim (or maybe it's a 'slogan', or a definition) is a general claim about a system in which sentences travel between agents over some circumscribed set of communication channels.  That is, it is about a system, and isn't actionable until the system has been specified.
 * 'Object' is used with reluctance.  It might be better to say 'refers to O' without saying what kind of a thing O is.
 * 'subject' here means grammatical subject, i.e. a part of the sentence.
-* 'Means', 'proposition', and 'about' are explained below.
-
-## Meaning
-
-A sentence S (on a given channel) means the proposition P = P1 AND LATER(P2) where P1, generally speaking, is what holds when an agent generates S (places it on the channel), and P2 is what holds after an agent interpreting S does whatever it does, generally speaking.
-
-* LATER is a modal operator similar to the deontic OB: LATER(P2) iff an interpreting agent will bring P2 about.
-* "Generally speaking" means we are talking about what is common to many communication events on a channel in a system, not any particular communication event.  We can't talk about this kind of "meaning" except as a generalization about the behavior over time of a communication system.
-* We could talk about "generally" as implying that the meaning of a sentence is a statistical property of a system, although I'd rather not (I note that people usually do not do so, in ordinary conversation).
-* This use of "meaning" coincides with one common use, but the word gets used in many other ways.  That might argue for qualifying it somehow, or using a different word.
-* If C2 is empty - that is, nothing generally seems to hold when S interpreted - we say that S is 'declarative'.
-* If C1 is empty - that is, nothing generally seems to hold when S is generated - we say that S is 'imperative'.
-
-## Proposition
-
-Something that can be true or false; a potential object of a propositional attitude.
-
-* Just as a color-quality or color-variable (e.g. the color of the wall) can change over time but is a particular color at any given time, a proposition can vary over time but is a particular truth value (true or false) at any given time.
-
-## About
-
-A proposition P is about an object O if its truth is sensitive to the state of O.  That is, P is about O if there is (hypothetically) some change that could be made to O that would invert the truth of P.
-
-* This definition relies on the ability to delimit the state of a given object.  Internal state such as hunger or temperature is pretty clearly state, but relations such as position (with respect to the world) and ownership (is what I own part of my state, and am I part of its state?) are less clear.
-* 'Change' and 'state' are clearly closely related, perhaps even interdefinable.
+* Reference is a term for analyzing communication.  It implies nothing about the relationship between any agent and O.  There must be some relationship, but it could be quite indirect.
 
 ## Truth and fidelity
 
