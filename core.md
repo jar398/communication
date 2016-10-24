@@ -1,8 +1,6 @@
-WORK IN PROGRESS - SUBJECT TO REVISION WITHOUT NOTICE
-
 # Communication
 
-You'll get the best results in the following if you consider the case where the agents are both robots (designed computers with sensors and actuators). For additional challenge (and flaws), consider in sequence
+You'll get the best results in the following if you consider the case where the agents are both designed automata with sensors and actuators (robots). For additional challenge (and flaws), consider in sequence
 
 * programmers communicating with robots (programming and debugging)
 * animal signalling (e.g. vervet monkeys)
