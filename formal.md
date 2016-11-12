@@ -85,7 +85,7 @@ This is a productive route, I believe, because it lends itself to
 empirical study and engineering utility in a way that the usual talk
 of "intention" and "representation" do not.  Here's how.
 
-1. Meaning is empirical because it is experimentally falsifiable.  To
+Meaning is empirical because it is experimentally falsifiable.  To
 assess a claim that s means p, we can monitor the state of c, and each
 time it is in state s, we can check to see whether p (i.e., whether p
 of that world-state is true); if p is true, the claim is corroborated,
@@ -106,22 +106,29 @@ Engineers to it all the time - they speak of the meaning of a signal
 carried on a wire, or a message in a network protocol, without
 difficulty.
 
-What the above definition of reference does it to build reference from
-an oracle for meaning (any oracle).  To challenge a claim that a
-sentence-part np refers to an object o, look for a vp in which <np,
-vp> does *not* mean a proposition that is about o, i.e. it means a
-proposition that is not about o.
+What the above definition of reference does it to derive reference
+from an oracle for meaning (any oracle).  Meaning is directly
+testable; reference less so.  To challenge a claim that a
+sentence-part np refers to an object o, look for a vp in which 
+<np, vp> does _not_ mean a proposition that is about o.
 
 How is a proposition p _not_ about an object o?  If p doesn't factor
 through o - if its truth is sensitive to something other than the
-state of o.  This is easy to detect empircally, by finding two world
+state of o.  This can be detected empirically, by finding two world
 states that are the same with respect to o (map to the same o-state),
 but lead to opposite senses of p.
 
-## To be done
+## Followons
 
-I've actually written about most of these topics elsewhere, but want
-to list them so you know that there is more.
+I've written about most of these topics elsewhere, but want to list
+them so that someone seeing only the above knows that there is much
+more to the story.
+
+Intuitively, we are really interested in whatever proposition,
+independent of c, is coincident (co-true/false) with the proposition
+that the channel is in state s.  The meaning of s is the former, not
+the latter.  To get at this requires bringing in more apparatus
+(agents? possible worlds? various lines of attack).
 
 There is a connection betwee the part/whole relationship between
 objects, and the is-about relationship, via the formalism (o' is part
@@ -134,9 +141,6 @@ How verb phrases work in this setting - we expect them to 'mean'
 prediates, through being generic over objects (implying that the
 objects they're generic over are somehow similar to one another)
 
-Of course the apparatus of meaning is carried by a population of
-agents via their behaviors of generation and interpretation.
-
 The propositions about an object form a boolean algebra.
 
 Limitations on objects: they need some kind of internal logic or set
@@ -148,14 +152,19 @@ Above we have declarative meanings; to cover communication in
 generally, need to cover imperative and combined
 declarative/imperative meanings as well.
 
-Evolutionary game theory of agents - fidelity vs. cheating.
-
 Is reference a functional relation?
+
+Of course the apparatus of meaning is carried by a population of
+agents via their behaviors of generation and interpretation.
+
+Evolutionary game theory (or economics) of agents - benefits of
+communication ('information transfer') - fidelity vs. cheating.
 
 ## References
 
 A good chunk of this comes from Yablo's book _Aboutness_.
 
 There's a big literature on intentionality, including Brian Cantwell
-Smith, but I don't know whether or how it's relevant.
+Smith (who got me started on this question), but I don't know whether
+or how it's relevant.
 
