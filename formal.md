@@ -57,7 +57,7 @@ object-states
 o_mapping is a surjective mapping from W to o_states (making o_states
 both the image and the range of o_mapping).
 
-Def. A proposition p is *about* an object o if it factors through o,
+Def. A proposition p is _about_ an object o if it factors through o,
 i.e. there exists a function q from o_states to Answer (a predicate)
 such that
 
@@ -147,6 +147,15 @@ Limitations on objects: they need some kind of internal logic or set
 of correlations between their propositions-about, in order for us to
 have compositional semantics and learnability.  An object can't be
 just a bag of unrelated propositions, for example.
+
+Related to this, the definition of reference seems to be very
+sensitive to the set of verb phrases; if that set changes, then
+reference relationships can change - an agent that learns a new verb
+phrase may have to adjust its idea of what a noun phrase refers to.
+While I believe this is inevitable, it is interesting that it does not
+feel like a problem in the wild; I think there must be a reason for
+this (and I conjecture it's the same as the preceding point,
+limitations on objects).
 
 Above we have declarative meanings; to cover communication in
 generally, need to cover imperative and combined
