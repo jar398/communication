@@ -134,8 +134,8 @@ There is a connection betwee the part/whole relationship between
 objects, and the is-about relationship, via the formalism (o' is part
 of o if predicates over o factor through o').
 
-Transitive verbs and relationships between objects (is a relationship
-a proposition that is about a pair of objects?)
+Need to account for transitive verbs and relationships between objects
+(is a relationship a proposition that is about a pair of objects?)
 
 How verb phrases work in this setting - we expect them to 'mean'
 prediates, through being generic over objects (implying that the
@@ -152,10 +152,12 @@ Related to this, the definition of reference seems to be very
 sensitive to the set of verb phrases; if that set changes, then
 reference relationships can change - an agent that learns a new verb
 phrase may have to adjust its idea of what a noun phrase refers to.
-While I believe this is inevitable, it is interesting that it does not
-feel like a problem in the wild; I think there must be a reason for
-this (and I conjecture it's the same as the preceding point,
-limitations on objects).
+(If you learn the population of Philadelphia, you may learn that
+'Philadelphia' does not refer to what you thought it did.)  While I
+believe this is inevitable, it is interesting that it does not feel
+like a problem in the wild; I think there must be a reason for this
+(and I conjecture it's the same as the preceding point, limitations on
+objects).
 
 Above we have declarative meanings; to cover communication in
 generally, need to cover imperative and combined
