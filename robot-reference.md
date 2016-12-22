@@ -62,22 +62,103 @@ but what?  The way in which P1 being part of the sentence relates to
 the robot's behavior depends on what P2 is, and vice versa.  This does
 not sound impossible, but it is puzzling, at least.
 
-I'm going to focus on subject phrases (or noun phrases), of which
-names and nouns are special cases, for a number of reasons.
+I'm going to focus first on subject phrases (or noun phrases), of
+which names and nouns are special cases.  Every known (compositional)
+language, whether natural or artificial, has sentences composed of a
+subject phrases and a predicate phrase.  [I guess I need to back up
+this claim.]  I do not know whether a language lacking them could
+exist, but their importance is important simply on the basis of
+evidence.
 
-1. Every known (compositional) language, whether natural or
-artificial, has sentences composed of a subject phrases and a
-predicate phrase.  [I guess I need to back up this claim.]  I do not
-know whether a language lacking them could exist, but their importance
-is important simply on the basis of evidence.
+We could start with predicate phrases, or other sentence structures,
+instead.  Take the choice of subject phrases as parts of
+subject/predicate phrase sentences as arbitrary for now.
 
-2. One must start somewhere; we could start with predicate phrases
-instead.  But the choice could be arbitrary.  (I have a feeling it is
-not; that it is logically more natural to understand predicate phrases
-once subject phrases are understood.  But that should become clear if
-the analysis gets far enough.)
+The problem now is what kinds of things we might say in order to
+specify the relationship between robot behavior (or let us say 'agent
+behavior') and compositional subject phrases occurring in message
+heard and said by the robot.
 
-When we try to characterize the role of subject phrases in behavior,
-we inevitably talk of the independent role of the subject phrase as
-being _referring_.
+We have two precedents to examine: artificial language and natural
+language.
+
+Artificial languages are designed for instructing a computer on what
+it ought to do, i.e. programming languages.  The linguistic behavior
+specification in question is that for the software responsible for
+interpreting the artificial language.
+
+Natural language is used for communication between people, and to a
+very limited extent between people and computers.  Here we are not
+_engineering_ the humans so we do not talk about specifications so
+much.  Rather we are trying to _understand_ how humans do what they do
+with language, and seek scientific _descriptions_ of their behavior.
+Descriptions and specifications look the same, and are only
+distinguished by what one does with them, so good descriptions should
+tell us what good specifications could be like.
+
+ways in which artificial languages fail:
+
+1. According to the programming language documentation, subject
+phrases relate ("refer") to entities in the computer's address space,
+not to entities in the world.  When we use a robot, properties of the
+address space are only indirectly relevant to what the robot does, so
+they are not what we really care about.
+
+2. Programmers clearly have in mind that certain data structure
+"represent" or are "proxies" for things outside the address space.
+For example, an `employee` record may have `name` and `year_of_birth`
+fields.  The tokens (as natural language) are obviously chosen to be
+suggestive, and lead one to suppose a set of relationships: the
+`employee` record might bear some relationship to an employee of a
+business, its `name` field might have some relationship to that
+employee's name, and so on.  In a well documented program these
+relationships will be spelled out, but obviously that documentation,
+written in natural language, is not affecting what the computer does.
+Any solid information we have about these relationships (where the
+values come from, when and how it gets corrected, and so on) relates
+to the larger system in which the program is embedded.  That larger
+system involves the computer, the employee, those doing data entry,
+company policy, and so on.
+
+Artificial languages do not help us much here.  Computer programs
+relate only to the computer's role as a component of a larger system.
+These systems typically rely on people in order to learn about and have
+an effect on the world.  They do not run autonomously or possess
+independent non-linguistic knowledge or control of their environment,
+as we expect robots to.  A computer can wield huge amounts of
+information, but it is left to humans to interpret it.  Specifying
+anything about a program only tells about narrowly about the computer
+running the program; it says nothing about the real system we will be
+interacting with.
+
+ok.
+
+Natural language, on the other hand, is clearly very successful in
+having a finely orchestrated connection between composed linguistic
+parts and arbitrary aspects of the world and behavior.  The difficulty
+is that it is difficult to make operational (in a sense that would
+satisfy a robot) the advice that usually passes for description or
+specification.
+
+Consider:
+
+>    'Chicago' refers to the area under the jurisdiction of the Chicago
+>    Metropolitan Agency for Planning.
+
+This specifies that it would be incorrect to use 'Chicago' to refer to
+something else, e.g. the City of Chicago.  Like 'meaning' (above),
+this specification is a cryptic constraint on the robot:
+
+>    The robot must interpret 'Chicago' to be the area under the
+>    jurisdiction of the Chicago Metropolitan Agency for Planning, and
+>    must use it only to refer to that area.
+
+Now suppose that we were a quality control engineer for this robot.
+What would we do to test its conformance with this specification?
+
+(not the best example since the robot has no sensors to detect
+properties of Chicago.  fix.)
+
+You can ask the robot questions, as if it were a student in a civics
+class, probing not only what it "knows", but what it rejects.
 
